@@ -12,4 +12,10 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
         : base(options, operationalStoreOptions)
     {
     }
+    
+    public DbSet<UserProfile> UserProfiles { get; set; }
+    public DbSet<LegalQuestion> LegalQuestions { get; set; }
+    public DbSet<LegalAnswer> LegalAnswers { get; set; }
+    public DbSet<Comment> Comments { get; set; }
+    public DbSet<Like> Likes { get; set; }
 }

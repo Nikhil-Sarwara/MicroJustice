@@ -1,0 +1,7 @@
+﻿services:
+  microjustice:
+    image: microjustice
+    build:
+      context: .
+      dockerfile: Dockerfile
+
