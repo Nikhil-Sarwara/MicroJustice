@@ -8,18 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47614377-588e-472e-b9a9-7b2e9ea3529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Comment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LegalAnswer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LegalQuestion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Like.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/UserProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/LegalQuestions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/CommentController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/LikeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/UserProfileController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/CreateLegalQuestionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/setupProxy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,23 +32,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tymnec"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tymnec&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Nikhil-Sarwara/MicroJustice.git",
-    "accountId": "ceadb556-4a64-44ac-b971-0de0b68d3704"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nikhil-Sarwara/MicroJustice.git&quot;,
+    &quot;accountId&quot;: &quot;ceadb556-4a64-44ac-b971-0de0b68d3704&quot;
   }
-}]]></component>
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2zEJPZXLSweJXryerYSLbn8QDPS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,13 +62,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/nikhilsarwara/RiderProjects/MicroJustice/ClientApp/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -114,11 +115,17 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -138,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751290276104</updated>
-      <workItem from="1751290281328" duration="927000" />
+      <workItem from="1751290281328" duration="3602000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -148,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751290346003</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add new models">
+      <option name="closed" value="true" />
+      <created>1751291414165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751291414165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +185,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Setup" />
+    <MESSAGE value="Add new models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
