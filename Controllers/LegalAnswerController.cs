@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using MicroJustice.Data;
+using MicroJustice.DTOs;
 using MicroJustice.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -17,16 +18,44 @@ public class LegalAnswerController : ControllerBase
 
     [HttpGet("question/{questionId}")]
     public async Task<ActionResult<IEnumerable<LegalAnswer>>> GetAnswers(int questionId)
-        => await _context.LegalAnswers.Where(a => a.QuestionId == questionId).ToListAsync();
+    {
+        return await _context.LegalAnswers
+            .Where(a => a.QuestionId == questionId)
+            .Include(a => a.Comments)
+            .ToListAsync();
+    }
 
     [Authorize]
     [HttpPost]
-    public async Task<IActionResult> PostAnswer([FromBody] LegalAnswer answer)
+    public async Task<IActionResult> PostAnswer([FromBody] CreateLegalAnswerDto dto)
     {
-        answer.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        answer.CreatedAt = DateTime.UtcNow;
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    
+        var answer = new LegalAnswer
+        {
+            QuestionId = dto.QuestionId,
+            Content = dto.Content,
+            UserId = userId,
+            CreatedAt = DateTime.UtcNow
+        };
+
         _context.LegalAnswers.Add(answer);
         await _context.SaveChangesAsync();
         return Ok(answer);
+    }
+    
+    [Authorize]
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteAnswer(int id)
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var answer = await _context.LegalAnswers.FindAsync(id);
+
+        if (answer == null) return NotFound();
+        if (answer.UserId != userId) return Forbid();
+
+        _context.LegalAnswers.Remove(answer);
+        await _context.SaveChangesAsync();
+        return NoContent();
     }
 }

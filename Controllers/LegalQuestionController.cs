@@ -1,11 +1,10 @@
 using System.Security.Claims;
 using MicroJustice.Data;
-using MicroJustice.DTOs;
 using MicroJustice.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MicroJustice.DTOs;
 
 namespace MicroJustice.Controllers;
 
@@ -14,38 +13,86 @@ namespace MicroJustice.Controllers;
 public class LegalQuestionController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
-    private readonly UserManager<ApplicationUser> _userManager;
 
-    public LegalQuestionController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+    public LegalQuestionController(ApplicationDbContext context)
     {
         _context = context;
-        _userManager = userManager;
     }
-    
+
+    // GET: api/legalquestion
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<LegalQuestion>>> GetAllQuestions()
+    public async Task<ActionResult<IEnumerable<LegalQuestionDto>>> GetAllQuestions()
     {
         var questions = await _context.LegalQuestions
+            .Include(q => q.User)
+            .Include(q => q.Answers)
+            .ThenInclude(a => a.User)
             .OrderByDescending(q => q.CreatedAt)
-            .ToListAsync();
+            .ToListAsync(); // ✅ Pull from DB first (without APPLY)
 
-        return Ok(questions);
+        var result = questions.Select(q => new LegalQuestionDto
+        {
+            Id = q.Id,
+            Title = q.Title,
+            Category = q.Category,
+            Content = q.Content,
+            CreatedAt = q.CreatedAt,
+            UserId = q.UserId,
+            UserName = q.User?.UserName,
+            Answers = q.Answers.Select(a => new LegalAnswerDto
+            {
+                Id = a.Id,
+                Content = a.Content,
+                CreatedAt = a.CreatedAt,
+                UserId = a.UserId,
+                UserName = a.User?.UserName
+            }).ToList()
+        });
+
+        return Ok(result);
     }
-    
+
+    // GET: api/legalquestion/{id}
     [HttpGet("{id}")]
-    public async Task<ActionResult<LegalQuestion>> GetQuestion(int id)
+    public async Task<ActionResult<LegalQuestionDto>> GetQuestion(int id)
     {
-        var question = await _context.LegalQuestions.FindAsync(id);
-        return question == null ? NotFound() : Ok(question);
+        var q = await _context.LegalQuestions
+            .Include(q => q.User)
+            .Include(q => q.Answers)
+                .ThenInclude(a => a.User)
+            .Where(q => q.Id == id)
+            .Select(q => new LegalQuestionDto
+            {
+                Id = q.Id,
+                Title = q.Title,
+                Category = q.Category,
+                Content = q.Content,
+                CreatedAt = q.CreatedAt,
+                UserId = q.UserId,
+                UserName = q.User.UserName,
+                Answers = q.Answers.Select(a => new LegalAnswerDto
+                {
+                    Id = a.Id,
+                    Content = a.Content,
+                    CreatedAt = a.CreatedAt,
+                    UserId = a.UserId,
+                    UserName = a.User.UserName,
+                    QuestionId = q.Id
+                }).ToList()
+            })
+            .FirstOrDefaultAsync();
+
+        return q == null ? NotFound() : Ok(q);
     }
 
+    // POST: api/legalquestion
     [Authorize]
     [HttpPost]
     public async Task<IActionResult> PostQuestion([FromBody] CreateLegalQuestionDto dto)
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-        var q = new LegalQuestion
+        var question = new LegalQuestion
         {
             Title = dto.Title,
             Category = dto.Category,
@@ -54,9 +101,9 @@ public class LegalQuestionController : ControllerBase
             CreatedAt = DateTime.UtcNow
         };
 
-        _context.LegalQuestions.Add(q);
+        _context.LegalQuestions.Add(question);
         await _context.SaveChangesAsync();
 
-        return Ok(q);
+        return Ok(new { question.Id });
     }
 }

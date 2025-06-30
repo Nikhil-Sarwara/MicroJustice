@@ -8,19 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47614377-588e-472e-b9a9-7b2e9ea3529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/LegalQuestions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/CommentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/LikeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/UserProfileController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/CreateLegalQuestionDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/LegalQA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/CreateLegalAnswerDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/LegalAnswerDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/LegalQuestionDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/LegalQuestions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/LegalAnswer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LegalAnswer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/LegalQuestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LegalQuestion.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +144,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751290276104</updated>
-      <workItem from="1751290281328" duration="3602000" />
+      <workItem from="1751290281328" duration="5318000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -163,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751291414165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add frontend for Legal Questions">
+      <option name="closed" value="true" />
+      <created>1751293995110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751293995110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +193,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Setup" />
     <MESSAGE value="Add new models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new models" />
+    <MESSAGE value="Add frontend for Legal Questions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add frontend for Legal Questions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

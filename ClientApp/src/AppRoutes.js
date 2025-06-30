@@ -1,7 +1,7 @@
 import ApiAuthorzationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { Counter } from "./components/Counter";
-import { LegalQuestions } from "./components/LegalQuestions";
 import { Home } from "./components/Home";
+import {LegalQA} from "./components/LegalQA";
 
 const AppRoutes = [
   {
@@ -15,7 +15,7 @@ const AppRoutes = [
   {
     path: '/fetch-legal-questions',
     requireAuth: true,
-    element: <LegalQuestions />
+    element: <LegalQA />
   },
   ...ApiAuthorzationRoutes
 ];
