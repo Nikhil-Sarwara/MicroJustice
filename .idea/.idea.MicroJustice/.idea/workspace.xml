@@ -8,26 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47614377-588e-472e-b9a9-7b2e9ea3529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/AuthLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/DefaultLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/LandingLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/AuthLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/DefaultLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/MicroJusticeLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/Extra/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/FetchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/Extra/FetchData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/LandingPage/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/LegalQA.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/ProductPage/LegalQA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/common/NavMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/common/NavMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroJustice.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroJustice.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751290276104</updated>
       <workItem from="1751290281328" duration="6050000" />
-      <workItem from="1751336033345" duration="1786000" />
+      <workItem from="1751336033345" duration="2481000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -190,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751296391741</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: Changes in the structure on project.">
+      <option name="closed" value="true" />
+      <created>1751337997889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751337997889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +206,8 @@
     <MESSAGE value="Add new models" />
     <MESSAGE value="Add frontend for Legal Questions" />
     <MESSAGE value="Implement Legal Answers Functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Legal Answers Functionality" />
+    <MESSAGE value="feat: Changes in the structure on project." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Changes in the structure on project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
