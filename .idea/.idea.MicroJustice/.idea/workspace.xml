@@ -8,18 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47614377-588e-472e-b9a9-7b2e9ea3529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/LegalQA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/CreateLegalAnswerDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/LegalAnswerDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/LegalQuestionDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/AuthLayout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/DefaultLayout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/LandingLayout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/AuthLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/DefaultLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/AppRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/LegalQuestions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LegalAnswerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LegalQuestionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/LegalAnswer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LegalAnswer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/LegalQuestion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LegalQuestion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/Extra/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/FetchData.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/Extra/FetchData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/LandingPage/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/LegalQA.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/ProductPage/LegalQA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/common/NavMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/NavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/common/NavMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroJustice.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MicroJustice.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/app.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,9 @@
     &quot;accountId&quot;: &quot;ceadb556-4a64-44ac-b971-0de0b68d3704&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ClientApp/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -54,28 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.MicroJustice.executor": "Run",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/nikhilsarwara/RiderProjects/MicroJustice/ClientApp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.MicroJustice.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/nikhilsarwara/RiderProjects/MicroJustice/ClientApp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MicroJustice">
     <configuration name="MicroJustice" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MicroJustice.csproj" />
@@ -144,7 +155,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1751290276104</updated>
-      <workItem from="1751290281328" duration="5318000" />
+      <workItem from="1751290281328" duration="6050000" />
+      <workItem from="1751336033345" duration="1786000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -170,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751293995110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement Legal Answers Functionality">
+      <option name="closed" value="true" />
+      <created>1751296391741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751296391741</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +214,8 @@
     <MESSAGE value="Initial Setup" />
     <MESSAGE value="Add new models" />
     <MESSAGE value="Add frontend for Legal Questions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add frontend for Legal Questions" />
+    <MESSAGE value="Implement Legal Answers Functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Legal Answers Functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

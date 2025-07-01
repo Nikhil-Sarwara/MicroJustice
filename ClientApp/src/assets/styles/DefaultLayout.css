@@ -1,0 +1,22 @@
+/* src/assets/styles/DefaultLayout.css */
+
+.default-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer sticks to bottom */
+}
+
+.default-layout-main {
+    flex-grow: 1; /* Allows main content to expand */
+    padding-top: 20px; /* Adjust based on NavMenu height */
+    padding-bottom: 20px;
+}
+
+.default-layout-footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    color: #6c757d;
+    font-size: 0.9em;
+}

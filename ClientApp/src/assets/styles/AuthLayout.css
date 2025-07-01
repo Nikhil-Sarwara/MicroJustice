@@ -1,0 +1,52 @@
+/* src/assets/styles/AuthLayout.css */
+
+.auth-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* Light grey background */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.auth-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.auth-logo {
+    max-width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+.auth-layout-main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Max width for auth forms */
+    padding: 20px;
+}
+
+/* Optional: Style for the content within the main area */
+.auth-layout-main > div { /* Assuming children might be a div wrapping the form */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.auth-footer {
+    padding: 15px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.85em;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+}

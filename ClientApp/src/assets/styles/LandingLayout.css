@@ -1,0 +1,45 @@
+/* src/assets/styles/LandingLayout.css */
+
+.landing-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; /* Clean white background */
+}
+
+.landing-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.landing-logo {
+    max-width: 180px; /* Adjust logo size */
+    height: auto;
+}
+
+.landing-layout-main {
+    flex-grow: 1;
+    padding: 0; /* Landing pages often use full-width sections */
+    max-width: none; /* Override Bootstrap container max-width if desired */
+}
+
+.landing-footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #343a40; /* Darker footer */
+    color: #f8f9fa;
+    font-size: 0.9em;
+}
+
+.landing-footer-nav a {
+    color: #adb5bd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.landing-footer-nav a:hover {
+    color: #ffffff;
+}
