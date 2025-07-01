@@ -13,12 +13,9 @@ export class LandingLayout extends Component {
                     <Container>
                         <Row>
                             <Col xs="12" md="6" className="text-center text-md-left">
-                                <a href="/">
+                                <a href="/" className={"icon-circle"}>
                                     <img src={logo} alt="Micro Justice" className="landing-logo" />
                                 </a>
-                            </Col>
-                            <Col xs="12" md="6" className="text-center text-md-right">
-                                <a href="/contact" className="btn btn-outline-primary">Get Started</a>
                             </Col>
                         </Row>
                     </Container>

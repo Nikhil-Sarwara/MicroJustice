@@ -1,0 +1,235 @@
+/* HomePage.css */
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 80px 0;
+    color: #343a40; /* Dark text for contrast */
+}
+
+.hero-headline {
+    font-size: 3.5rem; /* Larger font for impact */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #0056b3; /* Primary brand color */
+}
+
+.hero-subheadline {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-cta {
+    margin-right: 15px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px; /* Rounded buttons */
+}
+
+.hero-secondary-cta {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+.hero-image {
+    max-height: 450px; /* Control image size */
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.trust-logos {
+    margin-top: 50px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 30px;
+}
+
+.trust-logos img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.trust-logos img:hover {
+    opacity: 1;
+}
+
+/* --- Problem/Solution Section --- */
+.problem-solution-section {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.problem-solution-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 60px;
+}
+
+.icon-circle {
+    background-color: #007bff; /* Primary color for icons */
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.problem-solution-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.problem-solution-section p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* --- Features in Detail Section --- */
+.features-detail-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+.features-detail-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 60px;
+}
+
+.features-detail-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0056b3; /* Primary brand color */
+    margin-bottom: 20px;
+}
+
+.features-detail-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.features-detail-section .row {
+    margin-bottom: 60px; /* Spacing between feature blocks */
+}
+
+.features-detail-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 60px;
+}
+
+.testimonial-card {
+    border: none;
+    background-color: #f8f9fa; /* Light background for cards */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.testimonial-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+/* --- Final Call to Action --- */
+.final-cta-section {
+    background-color: #0056b3; /* Strong brand color for CTA */
+    color: white;
+    padding: 80px 0;
+}
+
+.final-cta-section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.final-cta-section p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.final-cta-button {
+    padding: 18px 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #28a745; /* Green for strong action */
+    border-color: #28a745;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.final-cta-button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* General Link Styling */
+a.btn-link {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+    .hero-subheadline {
+        font-size: 1rem;
+    }
+    .hero-cta, .hero-secondary-cta, .final-cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+    .problem-solution-section h2,
+    .features-detail-section h2,
+    .testimonials-section h2,
+    .final-cta-section h2 {
+        font-size: 2rem;
+    }
+    .features-detail-section h3 {
+        font-size: 1.75rem;
+        margin-top: 30px; /* Add space on mobile when image is above */
+    }
+}

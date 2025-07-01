@@ -8,9 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47614377-588e-472e-b9a9-7b2e9ea3529e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/MicroJusticeLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/FinancialCompanyLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/LegalFirmCompanyLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/LegalHandshake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/images/TechCompanyLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/assets/styles/HomePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MicroJustice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/components/layouts/LandingLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/pages/LandingPage/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/pages/LandingPage/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751290276104</updated>
       <workItem from="1751290281328" duration="6050000" />
-      <workItem from="1751336033345" duration="2481000" />
+      <workItem from="1751336033345" duration="3203000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Setup">
       <option name="closed" value="true" />
@@ -181,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751337997889</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add logo">
+      <option name="closed" value="true" />
+      <created>1751338744378</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751338744378</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +219,8 @@
     <MESSAGE value="Add frontend for Legal Questions" />
     <MESSAGE value="Implement Legal Answers Functionality" />
     <MESSAGE value="feat: Changes in the structure on project." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Changes in the structure on project." />
+    <MESSAGE value="add logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
